@@ -1,4 +1,4 @@
-# Mitochondrial variants correct synthetic lineage noise and uncover spatial clonal dynamics in human hematopoietic organoids
+# Mitochondrial variants uncover spatial clonal dynamics and correct synthetic lineage noise in human hematopoietic organoids 
 
 ## Introduction
 This repository contains the code and tools for a comprehensive analysis integrating LARRY barcoding and MAESTER with endogenous mitochondrial DNA (mtDNA) variant profiling in human hematopoietic embryonic organoids (HEMOs). The study leverages mitochondrial variants to correct synthetic lineage noise and uncover spatial clonal dynamics, providing deeper insights into hematopoietic development and clonal behaviour.
