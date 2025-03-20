@@ -4,7 +4,7 @@
 This repository contains the code and tools for a comprehensive analysis integrating LARRY barcoding and MAESTER with endogenous mitochondrial DNA (mtDNA) variant profiling in human hematopoietic embryonic organoids (HEMOs). The study leverages mitochondrial variants to correct synthetic lineage noise and uncover spatial clonal dynamics, providing deeper insights into hematopoietic development and clonal behaviour.
 
 <div align="center">
-<img src="/figure/f1.png" height = "120" alt="F1">
+<img src="/figure/f1.png" alt="F1">
 </a>
 </div>
 

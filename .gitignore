@@ -1,1 +1,7 @@
 *.swp
+.MAESTER_snp.ipynb
+.git.ignore
+.ipynb_checkpoints/
+SC_LARRY_MAESTER_D4-Copy1.ipynb
+cache/
+figure/.ipynb_checkpoints/
