@@ -1,7 +1,7 @@
 #https://velocyto.org/velocyto.py/tutorial/cli.html#run10x-run-on-10x-chromium-sample
 
-INPUT_ALN=/autofs/bal31/jhsu/home/projects/sc/data/hemo_paper_larry/larry-maester-d4/sc/2_bam/
-INPUT_REF=/autofs/bal31/jhsu/home/projects/sc/SpaceClone/ref_transcriptome/refdata-gex-GRCh38-2020-A
+INPUT_ALN=[XXX] # input alignment folder
+INPUT_REF=[XXX] # ref_transcriptome folder, requires mm10_rmsk.gtf, and gene.gtf file in https://velocyto.org/velocyto.py/tutorial/cli.html#run10x-run-on-10x-chromium-sample
 #OUTPUT_DIR
 
 docker run -it \
