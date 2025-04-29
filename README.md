@@ -22,7 +22,7 @@ This repository provides **end-to-end computational workflows** for:
   
 ## 🛠️ Installation
 
-### Core Analysis Environment
+#### Core Analysis Environment
 
 ``` bash
 # Create base environment
@@ -31,14 +31,14 @@ conda activate scanpy_env
 pip install -r scanpy_env.txt
 ```
 
-### Cell Fate Prediction (Optional)
+#### Cell Fate Prediction (Optional)
 ```bash
 conda create -y -n cell2fate_env python=3.9
 conda activate cell2fate_env
 pip install git+https://github.com/BayraktarLab/cell2fate
 ```
 
-## Variant Calling Tools
+#### Variant Calling Tools
 ```bash
 conda install -c bioconda cellsnp-lite
 pip install -U mquad
@@ -46,7 +46,7 @@ pip install -U mquad
 
 ## 🗂️ Pipeline Architecture
 
-### Preprocessing
+#### Preprocessing
 
 | Script    | Function |
 | -------- | ------- |
@@ -55,14 +55,14 @@ pip install -U mquad
 |preprocess/3_run_mquad.sh	| Informative SNP selection| 
 |preprocess/LARRY_barcode.ipynb	| Barcode processing & clone assignment| 
 
-### Core Analysis
+#### Core Analysis
 
 | Notebook    | Analysis |
 | -------- | ------- |
 |MAESTER_D4.ipynb	|	mtDNA clonal tracking with vireoSNP	|
 |SC_LARRY_MAESTER_D4.ipynb		| Multi-modal analysis: Single-cell annotation - LARRY/MAESTER integration - Clone fate prediction	|
 
-### Spatial Modules
+#### Spatial Modules
 
 | Notebook    | Analysis |
 | -------- | ------- |
