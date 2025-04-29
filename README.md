@@ -1,53 +1,83 @@
-# Mitochondrial variants uncover spatial clonal dynamics and correct synthetic lineage noise in human hematopoietic organoids 
+# Mitochondrial Variants Reveal Spatial Clonal Dynamics in Human Hematopoietic Organoids 
 
-## Introduction
-This repository contains the code and tools for a comprehensive analysis integrating LARRY barcoding and MAESTER with endogenous mitochondrial DNA (mtDNA) variant profiling in human hematopoietic embryonic organoids (HEMOs). The study leverages mitochondrial variants to correct synthetic lineage noise and uncover spatial clonal dynamics, providing deeper insights into hematopoietic development and clonal behaviour.
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) 
+
+A multi-modal framework integrating LARRY barcoding, MAESTER mtDNA profiling, and spatial transcriptomics
+
 
 <div align="center">
-<img src="/figure/f1.png" alt="F1">
-</a>
+
+<img src="/figure/f1.png" width="75%" alt="Graphical Abstract">
+
 </div>
 
-## Installation
+## 📖 Overview
 
-```
-#install single cell and Larry analysis package
+This repository provides **end-to-end computational workflows** for:
 
+- **Synthetic lineage noise correction** through mtDNA variant validation
+- **Spatial clonal dynamics reconstruction** in hematopoietic organoids
+- **Multi-modal integration** of LARRY barcoding, MAESTER mtDNA profiling, and Visium spatial transcriptomics
+
+  
+## 🛠️ Installation
+
+### Core Analysis Environment
+
+``` bash
+# Create base environment
 conda env create -f scanpy_env.yml
 conda activate scanpy_env
 pip install -r scanpy_env.txt
+```
 
-### install cell2fate for cell fate analysis
+### Cell Fate Prediction (Optional)
+```bash
 conda create -y -n cell2fate_env python=3.9
 conda activate cell2fate_env
 pip install git+https://github.com/BayraktarLab/cell2fate
+```
 
-
-# for preprocess/2_run_snp.sh and preprocess/3_run_mquad.sh
-# install MAESTER analysis package
+## Variant Calling Tools
+```bash
 conda install -c bioconda cellsnp-lite
 pip install -U mquad
 ```
 
-### Code structure
-```
-# preporcess, single cell read alignment
-preprocess/1_run_aln.sh
-# preprocess, MAESTER SNP finding
-preprocess/2_run_snp.sh
-# preprocess, MAESTER informative SNP finding
-preprocess/3_run_mquad.sh
-# preprocess, LARRY barcode and clone finding
-preprocess/LARRY_barcode.ipynb
+## 🗂️ Pipeline Architecture
 
-# D4 dataset MAESTER clone analysis
-MAESTER_D4.ipynb
-# D4 dataset cell fate analysis, combination of LARRY and MAESTER data
-SC_LARRY_MAESTER_D4.ipynb
+### Preprocessing
 
-# Analysis of spatial Visium-MAESTER data (chondrosarcoma sample)
-run_SpatialDE.ipynb
+| Script    | Function |
+| -------- | ------- |
+|preprocess/1_run_aln.sh	| Raw FASTQ processing & CellRanger-compatible alignment|
+|preprocess/2_run_snp.sh	| Mitochondrial variant calling with cellsnp-lite| 
+|preprocess/3_run_mquad.sh	| Informative SNP selection| 
+|preprocess/LARRY_barcode.ipynb	| Barcode processing & clone assignment| 
 
-# Analysis of HEMO Spatial Visuium-MAESTER data
-run_spatial_niche.ipynb
-```
+### Core Analysis
+
+| Notebook    | Analysis |
+| -------- | ------- |
+|MAESTER_D4.ipynb	|	mtDNA clonal tracking with vireoSNP	|
+|SC_LARRY_MAESTER_D4.ipynb		| Multi-modal analysis: Single-cell annotation - LARRY/MAESTER integration - Clone fate prediction	|
+
+### Spatial Modules
+
+| Notebook    | Analysis |
+| -------- | ------- |
+|run_spatial_niche.ipynb	 | HEMO-specific: Combined spatial single-cell data with MAESTER mtDNA information for spatial SNP distribution finding and niche identification pipeline |
+|run_SpatialDE.ipynb	 | Chondrosarcoma spatial analysis |
+
+
+## 📜 Citation
+
+If using this work, please cite:
+
+  Xue Y, Chao Y, Lin X, et al. Single-cell mitochondrial variant enrichment resolved clonal tracking and spatial architecture in human embryonic hematopoiesis[J]. bioRxiv, 2023: 2023.09. 18.558215.
+
+## 🤝 Contribution
+
+Bug reports and feature requests are welcome via GitHub Issues.
+
+For collaborative inquiries, contact jhsu@connect.hku.hk.
