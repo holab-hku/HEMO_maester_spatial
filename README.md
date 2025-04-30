@@ -11,7 +11,7 @@ A multi-modal framework integrating LARRY barcoding, MAESTER mtDNA profiling, an
 
 </div>
 
-## 📖 Overview
+## Overview
 
 This repository provides **end-to-end computational workflows** for:
 
@@ -20,7 +20,7 @@ This repository provides **end-to-end computational workflows** for:
 - **Multi-modal integration** of LARRY barcoding, MAESTER mtDNA profiling, and Visium spatial transcriptomics
 
   
-## 🛠️ Installation
+## Installation
 
 #### Core Analysis Environment
 
@@ -44,7 +44,7 @@ conda install -c bioconda cellsnp-lite
 pip install -U mquad
 ```
 
-## 🗂️ Pipeline Architecture
+##  Pipeline Architecture
 
 #### Preprocessing
 
@@ -70,13 +70,13 @@ pip install -U mquad
 |run_SpatialDE.ipynb	 | Chondrosarcoma spatial analysis |
 
 
-## 📜 Citation
+## Citation
 
 If using this work, please cite:
 
   Xue Y, Chao Y, Lin X, et al. Single-cell mitochondrial variant enrichment resolved clonal tracking and spatial architecture in human embryonic hematopoiesis[J]. bioRxiv, 2023: 2023.09. 18.558215.
 
-## 🤝 Contribution
+##  Contribution
 
 Bug reports and feature requests are welcome via GitHub Issues.
 
