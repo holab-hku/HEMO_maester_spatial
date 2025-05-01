@@ -2,6 +2,9 @@
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) 
 
+Contact: Junhao Su
+Email: jhsu@connect.hku.hk
+
 A multi-modal framework integrating LARRY barcoding, MAESTER mtDNA profiling, and spatial transcriptomics
 
 
@@ -76,8 +79,3 @@ If using this work, please cite:
 
   Xue Y, Chao Y, Lin X, et al. Single-cell mitochondrial variant enrichment resolved clonal tracking and spatial architecture in human embryonic hematopoiesis[J]. bioRxiv, 2023: 2023.09. 18.558215.
 
-##  Contribution
-
-Bug reports and feature requests are welcome via GitHub Issues.
-
-For collaborative inquiries, contact jhsu@connect.hku.hk.
