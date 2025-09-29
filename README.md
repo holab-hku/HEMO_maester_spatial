@@ -2,9 +2,9 @@
 
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) 
 
-Contact: Junhao Su
+Contact: Dr. Junhao Su, Prof. Joshua Ho
 
-Email: jhsu@connect.hku.hk
+Email: jhsu@connect.hku.hk, jwkho@hku.hk
 
 A multi-modal framework integrating LARRY barcoding, MAESTER mtDNA profiling, and spatial transcriptomics
 
