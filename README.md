@@ -78,5 +78,7 @@ pip install -U mquad
 
 If using this work, please cite:
 
-  Xue Y, Chao Y, Lin X, et al. Single-cell mitochondrial variant enrichment resolved clonal tracking and spatial architecture in human embryonic hematopoiesis[J]. bioRxiv, 2023: 2023.09. 18.558215.
+Single-cell mitochondrial lineage tracing decodes fate decision and spatial clonal architecture in human hematopoietic organoids
+Yan Xue, Junhao Su, Yiming Chao, Lu Liu, Xinyi Lin, Yang Xiang, Mun Kay Ho, Zezhuo Su, Junyi Chen, Zhuojuan Luo, Chengqi Lin, Ruibang Luo, Theo Aurich, Jianfeng Wu, Kelvin Sin Chi Cheung, Yuanhua Huang, Joshua WK Ho, Ryohichi Sugimura
+bioRxiv 2023.09.18.558215; doi: https://doi.org/10.1101/2023.09.18.558215
 
